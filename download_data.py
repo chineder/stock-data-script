@@ -57,10 +57,11 @@ def download_stock_data(stocks, output_dir, start_date, end_date, interval='1d')
 
     return all_stock_dfs
 
-
+#==============================
+# Example usage
+#==============================
 if __name__ == "__main__":
 
-    # Example usage
     output_dir = "./close_price"
     stocks = ['AMZN', 'BRK-A', 'INTC', 'KO', 'SBUX', 'TSLA']
     start_date = '2022-01-01'
