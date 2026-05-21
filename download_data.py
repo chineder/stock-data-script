@@ -64,9 +64,8 @@ if __name__ == "__main__":
     output_dir = "./close_price"
     stocks = ['AMZN', 'BRK-A', 'INTC', 'KO', 'SBUX', 'TSLA']
     start_date = '2022-01-01'
-    end_date = '2024-01-01'
+    end_date = '2024-01-01' # exclusive; data up to last trading day before this date
     interval = '1d'
-    
-    download_stock_data(stocks, output_dir, start_date, end_date, interval)
 
+    download_stock_data(stocks, output_dir, start_date, end_date, interval)
     print(f"[DONE] output_dir: {output_dir}")
